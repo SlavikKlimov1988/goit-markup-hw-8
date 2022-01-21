@@ -1,0 +1,122 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.container__footer {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.footer__address {
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    text-align: left;
+  }
+}
+
+.address {
+  display: block;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  transition: color 250ms var(--timing-function);
+
+  display: block;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &--white {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.footer__connect {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.footer__subscription {
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.footer__title {
+  text-align: center;
+  margin-bottom: 20px;
+
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.subscription {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.subscription__input {
+  transition: border 250ms var(--timing-function);
+
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: #2f303a;
+  color: #fff;
+  &:focus,
+  &:hover {
+    border-color: var(--hover-button-color);
+    outline-color: var(--hover-button-color);
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
